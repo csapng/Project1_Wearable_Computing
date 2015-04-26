@@ -85,6 +85,7 @@ activeTidy<-function(active) {
   activeSum<-ddply(activeLong, .(subject, activity, activityID, variable), summarize, metricMean = mean(value))
   activeSum<-arrange(activeSum, subject, activityID, variable)
   activeSum<-activeSum[-3]
+  activeSum<-rename(activeSum, feature=variable, featureMean=metricMean)
   return(activeSum) 
 }
 ## FUNCTIONS END***********************************************
@@ -94,7 +95,7 @@ activeTidy<-function(active) {
 ##install.packages("reshape2")
 ##install.packages("plyr")
 library(reshape2)
-library(plyr)
+library(dplyr)
                                       ## Function Calls:
 featureMas<-buildFeatures()           ## 1a. build masters
 activeData<-mergeFiles(featureMas)    ## 1. build datafile
