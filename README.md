@@ -7,6 +7,7 @@
 * Package dependencies: packages "reshape2" and "plyr" are required.  The .R code includes commands to open these as libraries, but commands to install the packages are currently commented out under the assumption that every person in this course now already has these two packages installed.
 * Output:  project1.txt, delimited using space as the separator, located in the same directory as the .R code
 
-##Project Description:  Create a tidy dataset from the UCI datasets on Human Activity Recognition Using Smartphones dataset (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones); the tidy data will provide the mean for all metrics pertaining to standard deviation and mean across all subjects and activities.  There are 30 subjects, six activities, 33 metrics involving standard deviation and 33 metrics involving mean.  The final tidy dataset (project1.txt) is long, including columns for subject, activity, metric name, and metric mean.
+## Project Description:
+Create a tidy dataset from the UCI datasets on Human Activity Recognition Using Smartphones dataset (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones); the tidy data will provide the mean for all metrics pertaining to standard deviation and mean across all subjects and activities.  There are 30 subjects, six activities, 33 metrics involving standard deviation and 33 metrics involving mean.  The final tidy dataset (project1.txt) is long, including columns for subject, activity, metric name, and metric mean.
 
-##For additional information refer to the codebook in this repository
+For additional information refer to the codebook in this repository
